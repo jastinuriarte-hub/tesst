@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Portfolio | Trecie May Mondoñedo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="navbar">
+    <a href="#" class="logo">Eportfolio</a>
+
+    <!-- Hidden Checkbox for 3-Dots Toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Toggle Navigation Menu">
+    
+    <!-- 3-Dots Interactive Label Button -->
+    <label for="menu-toggle" class="dots-btn" title="Toggle Menu" aria-hidden="true">&#8942;</label>
+
+    <!-- Floating Dropdown Menu -->
+    <div class="nav-dropdown">
+      <ul>
+        <li><a href="#application-letter" onclick="closeMenu()">Application Letter</a></li>
+        <li><a href="#resume" onclick="closeMenu()">Resume</a></li>
+        <li><a href="#ats-resume" onclick="closeMenu()">ATS Resume</a></li>
+        <li><a href="#industrial-resume" onclick="closeMenu()">Industrial Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Hero Photo Banner -->
+    <!-- Hero Photo Banner -->
+<!-- Hero Photo Banner -->
+<!-- Hero Photo Banner -->
+<!-- Hero Photo Banner -->
+<header class="hero-section">
+  <img src="pic.jpg" alt="Trecie May Mondoñedo" class="hero-img">
+  <div class="hero-overlay"></div>
+  <div class="badge-container">
+    <h1 class="badge name-badge">Merry Grace T. Blase </h1>
+    <p class="badge title-badge">LPT, MAFIL</p>
+  </div>
+</header>
+
+    <!-- Quick Links Navigation Stack -->
+    <section class="quick-links" aria-label="Quick Access Documents">
+      <a href="#application-letter" class="link-card">The Application Letter</a>
+      <a href="#resume" class="link-card">Resume</a>
+      <a href="#ats-resume" class="link-card">ATS Resume</a>
+      <a href="#industrial-resume" class="link-card">Industrial Resume</a>
+    </section>
+
+    <!-- Embedded Document Sections -->
+    <section id="application-letter" class="doc-section">
+      <div class="doc-section-header">
+        <h2 class="doc-title">The Application Letter</h2>
+        <div class="header-actions">
+          <span class="status-indicator">Document View</span>
+          <a href="path-to-application-letter.pdf" target="_blank" rel="noopener" class="download-btn">Open PDF ↗</a>
+        </div>
+      </div>
+      <div class="iframe-wrapper">
+        <iframe src="path-to-application-letter.pdf#toolbar=0" title="Application Letter PDF View" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="resume" class="doc-section">
+      <div class="doc-section-header">
+        <h2 class="doc-title">Resume</h2>
+        <div class="header-actions">
+          <span class="status-indicator">Document View</span>
+          <a href="path-to-resume.pdf" target="_blank" rel="noopener" class="download-btn">Open PDF ↗</a>
+        </div>
+      </div>
+      <div class="iframe-wrapper">
+        <iframe src="path-to-resume.pdf#toolbar=0" title="Resume PDF View" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="ats-resume" class="doc-section">
+      <div class="doc-section-header">
+        <h2 class="doc-title">ATS Resume</h2>
+        <div class="header-actions">
+          <span class="status-indicator">Document View</span>
+          <a href="path-to-ats-resume.pdf" target="_blank" rel="noopener" class="download-btn">Open PDF ↗</a>
+        </div>
+      </div>
+      <div class="iframe-wrapper">
+        <iframe src="path-to-ats-resume.pdf#toolbar=0" title="ATS Resume PDF View" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="industrial-resume" class="doc-section">
+      <div class="doc-section-header">
+        <h2 class="doc-title">Industrial Resume</h2>
+        <div class="header-actions">
+          <span class="status-indicator">Document View</span>
+          <a href="path-to-industrial-resume.pdf" target="_blank" rel="noopener" class="download-btn">Open PDF ↗</a>
+        </div>
+      </div>
+      <div class="iframe-wrapper">
+        <iframe src="path-to-industrial-resume.pdf#toolbar=0" title="Industrial Resume PDF View" loading="lazy"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Auto-close dropdown menu when a navigation item is clicked
+    function closeMenu() {
+      const toggle = document.getElementById('menu-toggle');
+      if (toggle) toggle.checked = false;
+    }
+  </script>
+</body>
+</html> 
